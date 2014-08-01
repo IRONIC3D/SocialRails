@@ -4,6 +4,8 @@
 
 <%= link_to "Post a new Status", new_status_path, class: "btn btn-primary" %>
 
+<hr>
+
 <% @statuses.each do |status| %>
   <div class="status">
     <strong><%= status.user.full_name %></strong> | a.k.a (<%= status.user.profile_name %>)

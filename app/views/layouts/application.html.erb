@@ -17,13 +17,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Socialist</a>
+        <%= link_to "Socialist", root_path, class: "navbar-brand" %>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><%= link_to "All Statuses", statuses_path, :class => "active" %></li>
+          <li><%= link_to "All Statuses", root_path, :class => "active" %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
@@ -40,7 +40,6 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <div class="container">
 
     <div class="flashNotice">
       <% if flash[:notice] %>
@@ -63,6 +62,5 @@
 
     <%= yield %>
 
-  </div>
 </body>
 </html>

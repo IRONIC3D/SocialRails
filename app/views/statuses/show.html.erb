@@ -2,7 +2,7 @@
 
 <p>
   <b>Name:</b>
-  <%= current_user.profile_name %>
+  <%= @status.user.full_name %> | a.k.a (<%= @status.user.profile_name %>)
 </p>
 
 <p>

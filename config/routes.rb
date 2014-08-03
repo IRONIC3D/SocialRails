@@ -11,7 +11,7 @@ Socialist::Application.routes.draw do
   resources :statuses
   get "updates", to: "statuses#index", as: :updates
 
-  get "/:id", to: "profiles#show"
+  get "/:id", to: "profiles#show", as: :profile
 
   root to: "statuses#index"
 end

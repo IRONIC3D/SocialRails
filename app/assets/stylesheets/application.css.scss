@@ -6,7 +6,7 @@ body { padding-top: 70px; }
 
 .status {
 	border-bottom: solid 1px #CCC;
-	padding: 5px 0;
+	padding: 5px 0px;
 }
 
 .status p {
@@ -23,4 +23,8 @@ body { padding-top: 70px; }
 
 .status.hover .admin {
 	display: inline;
+}
+
+.spanStatus {
+	margin-left: 10px;
 }

@@ -40,27 +40,16 @@
     </div><!-- /.container-fluid -->
   </nav>
 
+  <div class="flashNotice">
+    <% flash.each do |type, message| %>
+      <div class="alert <%= flash_class type %>">
+        <button class="close" type="button", data-dismiss="alert"></button>
+        <%= message %>
+      </div>
+    <% end %>
+  </div>
 
-    <div class="flashNotice">
-      <% if flash[:notice] %>
-        <div class="alert alert-success">
-          <button class="close" type="button" data-dismiss="alert">&times;</button>
-          <%= flash[:notice] %>
-        </div>        
-      <% elsif flash[:error] %>
-        <div class="alert alert-danger">
-          <button class="close" type="button" data-dismiss="alert">&times;</button>
-          <%= flash[:error] %>
-        </div>
-      <% elsif flash[:alert] %>
-        <div class="alert alert-warning">
-          <button class="close" type="button" data-dismiss="alert">&times;</button>
-          <%= flash[:alert] %>
-        </div>
-      <% end %>
-    </div>
-
-    <%= yield %>
+  <%= yield %>
 
 </body>
 </html>

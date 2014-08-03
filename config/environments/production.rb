@@ -66,5 +66,5 @@ Socialist::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   # Devise specific configuration
-  config.action_mailer.default_url_options = { host: 'iyad-socialrails.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'social-rails.herokuapp.com' }
 end

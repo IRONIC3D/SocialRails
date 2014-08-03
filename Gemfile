@@ -1,9 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.18'
+gem 'sprockets-rails', '=2.0.0.backport1'
+gem 'sprockets', '=2.2.2.backport2'
 gem 'bootstrap-sass', '~> 3.2.0.0'
+gem 'autoprefixer-rails'
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+  gem 'sass-rails', github: 'guilleiguaran/sass-rails', branch: 'backport'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end

@@ -11,3 +11,12 @@ end
 
 gem 'jquery-rails'
 gem 'devise'
+
+group :development do
+  gem 'guard'
+  gem 'guard-test'
+end
+
+group :test do
+   gem 'ruby-prof'
+end

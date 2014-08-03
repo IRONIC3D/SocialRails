@@ -23,16 +23,16 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><%= link_to "All Statuses", root_path, :class => "active" %></li>
+          <li><%= link_to "All Statuses", updates_path, :class => "active" %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
             <% if user_signed_in? %>
               <li><%= link_to "Hello #{current_user.full_name}", edit_user_registration_path %></li>
-              <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+              <li><%= link_to "Sign out", logout_path %></li>
             <% else %>
-              <li><%= link_to "Sign in", new_user_session_path %></li>
-              <li><%= link_to "Sign up", new_user_registration_path %></li>
+              <li><%= link_to "Sign in", login_path %></li>
+              <li><%= link_to "Sign up", register_path %></li>
             <% end %>
           </li>
         </ul>

@@ -9,3 +9,9 @@ carole:
   last_name: "Issa"
   profile_name: "ab"
   email: "carole.issa@gmail.com"
+
+mike:
+  first_name: "Mike"
+  last_name: "The Frog"
+  profile_name: "mikethefrog"
+  email: "mike@teamtreehouse.com"

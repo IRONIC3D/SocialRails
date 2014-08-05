@@ -1,4 +1,4 @@
-Socialist::Application.routes.draw do
+ Socialist::Application.routes.draw do
   get "profiles/show"
 
   devise_for :users
@@ -7,6 +7,8 @@ Socialist::Application.routes.draw do
     get "login", to: "devise/sessions#new", as: :login
     get "logout", to: "devise/sessions#destroy", as: :logout
   end
+
+  resources :user_friendships
 
   resources :statuses
   get "updates", to: "statuses#index", as: :updates

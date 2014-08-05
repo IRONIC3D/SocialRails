@@ -62,5 +62,8 @@ class UserTest < ActiveSupport::TestCase
     assert users(:iyad).friends.include?(users(:mike))
   end
 
+  test "that calling to_param on a user return the profile name" do
+    assert_equal "i3D", users(:iyad).to_param
+  end
 
 end

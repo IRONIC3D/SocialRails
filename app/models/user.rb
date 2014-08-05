@@ -25,6 +25,10 @@ class User < ActiveRecord::Base
     first_name + " " + last_name
   end
 
+  def to_param
+    profile_name
+  end
+
   def gravatar_url
     normalized_email = email.strip.downcase
     hash = Digest::MD5.hexdigest(normalized_email)

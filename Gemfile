@@ -22,6 +22,7 @@ end
 
 group :test do
   gem 'ruby-prof'
+  gem 'shoulda', '~> 3.5.0'
 end
 
 group :production do
